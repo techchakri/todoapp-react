@@ -1,6 +1,6 @@
 FROM ubuntu:23.04
 
-ENV NODE_HOME=/u01/middleware/node-v18.14.1
+ENV NODE_HOME=/u01/middleware/node-v18.14.1-linux-x64
 ENV PATH=$PATH:$NODE_HOME/bin
 
 RUN mkdir -p /u01/middleware
