@@ -12,6 +12,9 @@ RUN sudo apt install -y utils-xz
 RUN tar -xzvf node-v18.14.1-linux-x64.tar.xz
 RUN rm -f node-v18.14.1-linux-x64.tar.xz
 
+RUN mkdir -p /u01/app
+WORKDIR /u01/app
+COPY . /app
 RUN npm install
 CMD ["npm","start"]
 
